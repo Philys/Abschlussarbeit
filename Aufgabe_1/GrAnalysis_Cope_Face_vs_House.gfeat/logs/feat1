@@ -1,0 +1,27 @@
+
+/bin/cp /tmp/feat_duNQxn.fsf design.fsf
+
+/usr/local/fsl/bin/feat_model design
+
+mkdir .files;cp /usr/local/fsl/doc/fsl.css .files;cp -r /usr/local/fsl/doc/images .files/images
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat2_pre   /usr/local/fsl/bin/feat /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat/design.fsf -D /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat -gfeatprep
+29525
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3a_flame -j 29525  /usr/local/fsl/bin/feat /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat/cope1.feat/design.fsf -D /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat/cope1.feat -I 1 -flame1
+31404
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3b_flame -j 31404 -t ./.flame
+31873
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3c_flame -j 31873  /usr/local/fsl/bin/feat /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat/cope1.feat/design.fsf -D /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat/cope1.feat -flame3
+31902
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat4_post -j 31902  /usr/local/fsl/bin/feat /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat/cope1.feat/design.fsf -D /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat/cope1.feat -poststats 1
+31969
+
+/usr/local/fsl/bin/fsl_sub -T 1 -l logs -N feat5_stop -j 31969  /usr/local/fsl/bin/feat /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat/cope1.feat/design.fsf -D /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat/cope1.feat -stop
+32686
+
+/usr/local/fsl/bin/fsl_sub -T 1 -l logs -N feat5_stop -j 32686  /usr/local/fsl/bin/feat /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat/cope1.feat/design.fsf -D /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat -stop
+32827

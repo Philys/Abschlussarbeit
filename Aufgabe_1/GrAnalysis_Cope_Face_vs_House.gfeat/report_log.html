@@ -1,0 +1,85 @@
+<HTML><HEAD>
+<!--refreshstart-->
+
+<!--refreshstop-->
+<link REL=stylesheet TYPE=text/css href=.files/fsl.css>
+<TITLE>FSL</TITLE></HEAD><BODY><OBJECT data=report.html></OBJECT>
+<h2>Progress Report / Log</h2>
+Started at Sa  2 Sep 2017 12:29:21 CEST<p>
+Feat main script<br><pre>
+
+/bin/cp /tmp/feat_duNQxn.fsf design.fsf
+
+/usr/local/fsl/bin/feat_model design
+
+mkdir .files;cp /usr/local/fsl/doc/fsl.css .files;cp -r /usr/local/fsl/doc/images .files/images
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat2_pre   /usr/local/fsl/bin/feat /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat/design.fsf -D /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat -gfeatprep
+29525
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3a_flame -j 29525  /usr/local/fsl/bin/feat /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat/cope1.feat/design.fsf -D /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat/cope1.feat -I 1 -flame1
+31404
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3b_flame -j 31404 -t ./.flame
+31873
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3c_flame -j 31873  /usr/local/fsl/bin/feat /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat/cope1.feat/design.fsf -D /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat/cope1.feat -flame3
+31902
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat4_post -j 31902  /usr/local/fsl/bin/feat /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat/cope1.feat/design.fsf -D /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat/cope1.feat -poststats 1
+31969
+
+/usr/local/fsl/bin/fsl_sub -T 1 -l logs -N feat5_stop -j 31969  /usr/local/fsl/bin/feat /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat/cope1.feat/design.fsf -D /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat/cope1.feat -stop
+32686
+
+/usr/local/fsl/bin/fsl_sub -T 1 -l logs -N feat5_stop -j 32686  /usr/local/fsl/bin/feat /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat/cope1.feat/design.fsf -D /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz.gfeat -stop
+</pre><hr>Higher-level input files preparation<br><pre>
+
+/usr/local/fsl/bin/featregapply /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-01/sub-01_task-objectcategories_bold.gfeat/cope1.feat
+
+/usr/local/fsl/bin/featregapply /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-02/sub-02_task-objectcategories_bold.gfeat/cope1.feat
+
+/usr/local/fsl/bin/featregapply /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-03/sub-03_task-objectcategories_bold.gfeat/cope1.feat
+
+/usr/local/fsl/bin/featregapply /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-04/sub-04_task-objectcategories_bold.gfeat/cope1.feat
+
+/usr/local/fsl/bin/featregapply /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-05/sub-05_task-objectcategories_bold.gfeat/cope1.feat
+
+/usr/local/fsl/bin/featregapply /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-06/sub-06_task-objectcategories_bold.gfeat/cope1.feat
+
+/usr/local/fsl/bin/featregapply /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-09/sub-09_task-objectcategories_bold.gfeat/cope1.feat
+
+/usr/local/fsl/bin/featregapply /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-10/sub-10_task-objectcategories_bold.gfeat/cope1.feat
+
+/usr/local/fsl/bin/featregapply /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-14/sub-14_task-objectcategories_bold.gfeat/cope1.feat
+
+/usr/local/fsl/bin/featregapply /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-15/sub-15_task-objectcategories_bold.gfeat/cope1.feat
+
+/usr/local/fsl/bin/featregapply /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-16/sub-16_task-objectcategories_bold.gfeat/cope1.feat
+
+/usr/local/fsl/bin/fslmerge -t bg_image  /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-01/sub-01_task-objectcategories_bold.gfeat/cope1.feat/example_func /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-02/sub-02_task-objectcategories_bold.gfeat/cope1.feat/example_func /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-03/sub-03_task-objectcategories_bold.gfeat/cope1.feat/example_func /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-04/sub-04_task-objectcategories_bold.gfeat/cope1.feat/example_func /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-05/sub-05_task-objectcategories_bold.gfeat/cope1.feat/example_func /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-06/sub-06_task-objectcategories_bold.gfeat/cope1.feat/example_func /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-09/sub-09_task-objectcategories_bold.gfeat/cope1.feat/example_func /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-10/sub-10_task-objectcategories_bold.gfeat/cope1.feat/example_func /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-14/sub-14_task-objectcategories_bold.gfeat/cope1.feat/example_func /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-15/sub-15_task-objectcategories_bold.gfeat/cope1.feat/example_func /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-16/sub-16_task-objectcategories_bold.gfeat/cope1.feat/example_func
+
+/usr/local/fsl/bin/fslmaths bg_image -inm 1000 -Tmean bg_image -odt float
+
+/usr/local/fsl/bin/fslmerge -t mask  /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-01/sub-01_task-objectcategories_bold.gfeat/cope1.feat/mask /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-02/sub-02_task-objectcategories_bold.gfeat/cope1.feat/mask /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-03/sub-03_task-objectcategories_bold.gfeat/cope1.feat/mask /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-04/sub-04_task-objectcategories_bold.gfeat/cope1.feat/mask /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-05/sub-05_task-objectcategories_bold.gfeat/cope1.feat/mask /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-06/sub-06_task-objectcategories_bold.gfeat/cope1.feat/mask /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-09/sub-09_task-objectcategories_bold.gfeat/cope1.feat/mask /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-10/sub-10_task-objectcategories_bold.gfeat/cope1.feat/mask /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-14/sub-14_task-objectcategories_bold.gfeat/cope1.feat/mask /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-15/sub-15_task-objectcategories_bold.gfeat/cope1.feat/mask /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-16/sub-16_task-objectcategories_bold.gfeat/cope1.feat/mask
+
+/usr/local/fsl/bin/fslmaths mask -Tmin mask
+
+/usr/local/fsl/bin/fslmerge -t mean_func  /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-01/sub-01_task-objectcategories_bold.gfeat/cope1.feat/mean_func /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-02/sub-02_task-objectcategories_bold.gfeat/cope1.feat/mean_func /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-03/sub-03_task-objectcategories_bold.gfeat/cope1.feat/mean_func /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-04/sub-04_task-objectcategories_bold.gfeat/cope1.feat/mean_func /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-05/sub-05_task-objectcategories_bold.gfeat/cope1.feat/mean_func /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-06/sub-06_task-objectcategories_bold.gfeat/cope1.feat/mean_func /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-09/sub-09_task-objectcategories_bold.gfeat/cope1.feat/mean_func /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-10/sub-10_task-objectcategories_bold.gfeat/cope1.feat/mean_func /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-14/sub-14_task-objectcategories_bold.gfeat/cope1.feat/mean_func /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-15/sub-15_task-objectcategories_bold.gfeat/cope1.feat/mean_func /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-16/sub-16_task-objectcategories_bold.gfeat/cope1.feat/mean_func
+
+/usr/local/fsl/bin/fslmaths mean_func -Tmean mean_func
+
+/usr/local/fsl/bin/fslmerge -t cope1  /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-01/sub-01_task-objectcategories_bold.gfeat/cope1.feat/stats/cope1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-02/sub-02_task-objectcategories_bold.gfeat/cope1.feat/stats/cope1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-03/sub-03_task-objectcategories_bold.gfeat/cope1.feat/stats/cope1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-04/sub-04_task-objectcategories_bold.gfeat/cope1.feat/stats/cope1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-05/sub-05_task-objectcategories_bold.gfeat/cope1.feat/stats/cope1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-06/sub-06_task-objectcategories_bold.gfeat/cope1.feat/stats/cope1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-09/sub-09_task-objectcategories_bold.gfeat/cope1.feat/stats/cope1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-10/sub-10_task-objectcategories_bold.gfeat/cope1.feat/stats/cope1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-14/sub-14_task-objectcategories_bold.gfeat/cope1.feat/stats/cope1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-15/sub-15_task-objectcategories_bold.gfeat/cope1.feat/stats/cope1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-16/sub-16_task-objectcategories_bold.gfeat/cope1.feat/stats/cope1
+
+/usr/local/fsl/bin/fslmaths cope1 -mas mask cope1
+
+printf '1.14534263333 ' >> design.lcon
+
+/usr/local/fsl/bin/fslmerge -t varcope1  /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-01/sub-01_task-objectcategories_bold.gfeat/cope1.feat/stats/varcope1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-02/sub-02_task-objectcategories_bold.gfeat/cope1.feat/stats/varcope1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-03/sub-03_task-objectcategories_bold.gfeat/cope1.feat/stats/varcope1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-04/sub-04_task-objectcategories_bold.gfeat/cope1.feat/stats/varcope1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-05/sub-05_task-objectcategories_bold.gfeat/cope1.feat/stats/varcope1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-06/sub-06_task-objectcategories_bold.gfeat/cope1.feat/stats/varcope1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-09/sub-09_task-objectcategories_bold.gfeat/cope1.feat/stats/varcope1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-10/sub-10_task-objectcategories_bold.gfeat/cope1.feat/stats/varcope1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-14/sub-14_task-objectcategories_bold.gfeat/cope1.feat/stats/varcope1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-15/sub-15_task-objectcategories_bold.gfeat/cope1.feat/stats/varcope1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-16/sub-16_task-objectcategories_bold.gfeat/cope1.feat/stats/varcope1
+
+/usr/local/fsl/bin/fslmaths varcope1 -mas mask varcope1
+
+/usr/local/fsl/bin/fslmerge -t tdof_t1  /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-01/sub-01_task-objectcategories_bold.gfeat/cope1.feat/stats/tdof_t1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-02/sub-02_task-objectcategories_bold.gfeat/cope1.feat/stats/tdof_t1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-03/sub-03_task-objectcategories_bold.gfeat/cope1.feat/stats/tdof_t1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-04/sub-04_task-objectcategories_bold.gfeat/cope1.feat/stats/tdof_t1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-05/sub-05_task-objectcategories_bold.gfeat/cope1.feat/stats/tdof_t1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-06/sub-06_task-objectcategories_bold.gfeat/cope1.feat/stats/tdof_t1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-09/sub-09_task-objectcategories_bold.gfeat/cope1.feat/stats/tdof_t1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-10/sub-10_task-objectcategories_bold.gfeat/cope1.feat/stats/tdof_t1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-14/sub-14_task-objectcategories_bold.gfeat/cope1.feat/stats/tdof_t1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-15/sub-15_task-objectcategories_bold.gfeat/cope1.feat/stats/tdof_t1 /Users/Phili/Documents/Abschlussarbeit_Seminar_Datenanalyse/Aufgabe_1/Datensatz/sub-16/sub-16_task-objectcategories_bold.gfeat/cope1.feat/stats/tdof_t1
+
+/usr/local/fsl/bin/fslmaths tdof_t1 -mas mask tdof_t1
+</pre><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></BODY></HTML>
